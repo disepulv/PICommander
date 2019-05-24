@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02222C6152D33108289037C0 /* Pods_PICommanderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8903C35EF65F655105BF3EB6 /* Pods_PICommanderUITests.framework */; };
+		5F269BB77E520A1BDC280AE1 /* Pods_PICommander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0EB14FFC55EFFC45518533 /* Pods_PICommander.framework */; };
+		CD3910993E6EBD71781105E3 /* Pods_PICommanderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04598CE5AEB0FE8B0F34105 /* Pods_PICommanderTests.framework */; };
+		E741F3E8217CCE72000171CE /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741F3E4217CCE72000171CE /* Manager.swift */; };
+		E741F3E9217CCE72000171CE /* SwiftPi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741F3E5217CCE72000171CE /* SwiftPi.swift */; };
+		E76512A5217CC82800328106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76512A4217CC82800328106 /* AppDelegate.swift */; };
+		E76512A7217CC82800328106 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76512A6217CC82800328106 /* ViewController.swift */; };
+		E76512AA217CC82800328106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76512A8217CC82800328106 /* Main.storyboard */; };
+		E76512AD217CC82800328106 /* PICommander.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E76512AB217CC82800328106 /* PICommander.xcdatamodeld */; };
+		E76512AF217CC82A00328106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76512AE217CC82A00328106 /* Assets.xcassets */; };
+		E76512B2217CC82A00328106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76512B0217CC82A00328106 /* LaunchScreen.storyboard */; };
+		E76512BD217CC82A00328106 /* PICommanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76512BC217CC82A00328106 /* PICommanderTests.swift */; };
+		E76512C8217CC82A00328106 /* PICommanderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76512C7217CC82A00328106 /* PICommanderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E76512B9217CC82A00328106 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7651299217CC82800328106 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76512A0217CC82800328106;
+			remoteInfo = PICommander;
+		};
+		E76512C4217CC82A00328106 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7651299217CC82800328106 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76512A0217CC82800328106;
+			remoteInfo = PICommander;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C0EB14FFC55EFFC45518533 /* Pods_PICommander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PICommander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D7E9EC30A62698CB7B023A7 /* Pods-PICommanderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PICommanderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PICommanderUITests/Pods-PICommanderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		69504B417AD852E094D27C10 /* Pods-PICommander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PICommander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PICommander/Pods-PICommander.debug.xcconfig"; sourceTree = "<group>"; };
+		8189524B2D23D9166E13A00A /* Pods-PICommanderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PICommanderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PICommanderTests/Pods-PICommanderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8903C35EF65F655105BF3EB6 /* Pods_PICommanderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PICommanderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		997B76D5CBE13BE83E351B74 /* Pods-PICommanderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PICommanderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PICommanderTests/Pods-PICommanderTests.release.xcconfig"; sourceTree = "<group>"; };
+		B4F2612738B9CD2E98A25C8E /* Pods-PICommanderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PICommanderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PICommanderUITests/Pods-PICommanderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC8C11CBF165FED64624E01B /* Pods-PICommander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PICommander.release.xcconfig"; path = "Pods/Target Support Files/Pods-PICommander/Pods-PICommander.release.xcconfig"; sourceTree = "<group>"; };
+		E741F3E4217CCE72000171CE /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		E741F3E5217CCE72000171CE /* SwiftPi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPi.swift; sourceTree = "<group>"; };
+		E741F3E7217CCE72000171CE /* SwiftPi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftPi.h; sourceTree = "<group>"; };
+		E76512A1217CC82800328106 /* PICommander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICommander.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76512A4217CC82800328106 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E76512A6217CC82800328106 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E76512A9217CC82800328106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E76512AC217CC82800328106 /* PICommander.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PICommander.xcdatamodel; sourceTree = "<group>"; };
+		E76512AE217CC82A00328106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E76512B1217CC82A00328106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E76512B3217CC82A00328106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E76512B8217CC82A00328106 /* PICommanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PICommanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76512BC217CC82A00328106 /* PICommanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PICommanderTests.swift; sourceTree = "<group>"; };
+		E76512BE217CC82A00328106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E76512C3217CC82A00328106 /* PICommanderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PICommanderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76512C7217CC82A00328106 /* PICommanderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PICommanderUITests.swift; sourceTree = "<group>"; };
+		E76512C9217CC82A00328106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04598CE5AEB0FE8B0F34105 /* Pods_PICommanderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PICommanderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E765129E217CC82800328106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F269BB77E520A1BDC280AE1 /* Pods_PICommander.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76512B5217CC82A00328106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3910993E6EBD71781105E3 /* Pods_PICommanderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76512C0217CC82A00328106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02222C6152D33108289037C0 /* Pods_PICommanderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E440F1370FF6E1D5761A72A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69504B417AD852E094D27C10 /* Pods-PICommander.debug.xcconfig */,
+				BC8C11CBF165FED64624E01B /* Pods-PICommander.release.xcconfig */,
+				8189524B2D23D9166E13A00A /* Pods-PICommanderTests.debug.xcconfig */,
+				997B76D5CBE13BE83E351B74 /* Pods-PICommanderTests.release.xcconfig */,
+				B4F2612738B9CD2E98A25C8E /* Pods-PICommanderUITests.debug.xcconfig */,
+				0D7E9EC30A62698CB7B023A7 /* Pods-PICommanderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E741F3E3217CCE72000171CE /* SwiftPi */ = {
+			isa = PBXGroup;
+			children = (
+				E741F3E4217CCE72000171CE /* Manager.swift */,
+				E741F3E5217CCE72000171CE /* SwiftPi.swift */,
+				E741F3E7217CCE72000171CE /* SwiftPi.h */,
+			);
+			path = SwiftPi;
+			sourceTree = SOURCE_ROOT;
+		};
+		E7651298217CC82800328106 = {
+			isa = PBXGroup;
+			children = (
+				E76512A3217CC82800328106 /* PICommander */,
+				E76512BB217CC82A00328106 /* PICommanderTests */,
+				E76512C6217CC82A00328106 /* PICommanderUITests */,
+				E76512A2217CC82800328106 /* Products */,
+				E440F1370FF6E1D5761A72A3 /* Pods */,
+				EE70459116F7F90D3C0209E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E76512A2217CC82800328106 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E76512A1217CC82800328106 /* PICommander.app */,
+				E76512B8217CC82A00328106 /* PICommanderTests.xctest */,
+				E76512C3217CC82A00328106 /* PICommanderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E76512A3217CC82800328106 /* PICommander */ = {
+			isa = PBXGroup;
+			children = (
+				E741F3E3217CCE72000171CE /* SwiftPi */,
+				E76512A4217CC82800328106 /* AppDelegate.swift */,
+				E76512A6217CC82800328106 /* ViewController.swift */,
+				E76512A8217CC82800328106 /* Main.storyboard */,
+				E76512AE217CC82A00328106 /* Assets.xcassets */,
+				E76512B0217CC82A00328106 /* LaunchScreen.storyboard */,
+				E76512B3217CC82A00328106 /* Info.plist */,
+				E76512AB217CC82800328106 /* PICommander.xcdatamodeld */,
+			);
+			path = PICommander;
+			sourceTree = "<group>";
+		};
+		E76512BB217CC82A00328106 /* PICommanderTests */ = {
+			isa = PBXGroup;
+			children = (
+				E76512BC217CC82A00328106 /* PICommanderTests.swift */,
+				E76512BE217CC82A00328106 /* Info.plist */,
+			);
+			path = PICommanderTests;
+			sourceTree = "<group>";
+		};
+		E76512C6217CC82A00328106 /* PICommanderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E76512C7217CC82A00328106 /* PICommanderUITests.swift */,
+				E76512C9217CC82A00328106 /* Info.plist */,
+			);
+			path = PICommanderUITests;
+			sourceTree = "<group>";
+		};
+		EE70459116F7F90D3C0209E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C0EB14FFC55EFFC45518533 /* Pods_PICommander.framework */,
+				F04598CE5AEB0FE8B0F34105 /* Pods_PICommanderTests.framework */,
+				8903C35EF65F655105BF3EB6 /* Pods_PICommanderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E76512A0217CC82800328106 /* PICommander */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76512CC217CC82A00328106 /* Build configuration list for PBXNativeTarget "PICommander" */;
+			buildPhases = (
+				D3A6C1DD13D5E6A3EBF391CC /* [CP] Check Pods Manifest.lock */,
+				E765129D217CC82800328106 /* Sources */,
+				E765129E217CC82800328106 /* Frameworks */,
+				E765129F217CC82800328106 /* Resources */,
+				3115A347DA2EB3139B94305A /* [CP] Embed Pods Frameworks */,
+				E985D08A3E1C03BD1BFE0D19 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PICommander;
+			productName = PICommander;
+			productReference = E76512A1217CC82800328106 /* PICommander.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E76512B7217CC82A00328106 /* PICommanderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76512CF217CC82A00328106 /* Build configuration list for PBXNativeTarget "PICommanderTests" */;
+			buildPhases = (
+				82E52B1F676DC3EA7E4A4361 /* [CP] Check Pods Manifest.lock */,
+				E76512B4217CC82A00328106 /* Sources */,
+				E76512B5217CC82A00328106 /* Frameworks */,
+				E76512B6217CC82A00328106 /* Resources */,
+				B263B0FE82D08F80573DE068 /* [CP] Embed Pods Frameworks */,
+				BBAE3F53FDF8EB9B2F0C19B9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E76512BA217CC82A00328106 /* PBXTargetDependency */,
+			);
+			name = PICommanderTests;
+			productName = PICommanderTests;
+			productReference = E76512B8217CC82A00328106 /* PICommanderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E76512C2217CC82A00328106 /* PICommanderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76512D2217CC82A00328106 /* Build configuration list for PBXNativeTarget "PICommanderUITests" */;
+			buildPhases = (
+				D56745B70C61BCE3B95EBE58 /* [CP] Check Pods Manifest.lock */,
+				E76512BF217CC82A00328106 /* Sources */,
+				E76512C0217CC82A00328106 /* Frameworks */,
+				E76512C1217CC82A00328106 /* Resources */,
+				5024ECD35B7B5C4A9520DDC2 /* [CP] Embed Pods Frameworks */,
+				EA87778F3635E866966CD262 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E76512C5217CC82A00328106 /* PBXTargetDependency */,
+			);
+			name = PICommanderUITests;
+			productName = PICommanderUITests;
+			productReference = E76512C3217CC82A00328106 /* PICommanderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7651299217CC82800328106 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = 7soft;
+				TargetAttributes = {
+					E76512A0217CC82800328106 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					E76512B7217CC82A00328106 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E76512A0217CC82800328106;
+					};
+					E76512C2217CC82A00328106 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E76512A0217CC82800328106;
+					};
+				};
+			};
+			buildConfigurationList = E765129C217CC82800328106 /* Build configuration list for PBXProject "PICommander" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7651298217CC82800328106;
+			productRefGroup = E76512A2217CC82800328106 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E76512A0217CC82800328106 /* PICommander */,
+				E76512B7217CC82A00328106 /* PICommanderTests */,
+				E76512C2217CC82A00328106 /* PICommanderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E765129F217CC82800328106 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76512B2217CC82A00328106 /* LaunchScreen.storyboard in Resources */,
+				E76512AF217CC82A00328106 /* Assets.xcassets in Resources */,
+				E76512AA217CC82800328106 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76512B6217CC82A00328106 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76512C1217CC82A00328106 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3115A347DA2EB3139B94305A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PICommander/Pods-PICommander-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5024ECD35B7B5C4A9520DDC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PICommanderUITests/Pods-PICommanderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82E52B1F676DC3EA7E4A4361 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B263B0FE82D08F80573DE068 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PICommanderTests/Pods-PICommanderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBAE3F53FDF8EB9B2F0C19B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PICommanderTests/Pods-PICommanderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A6C1DD13D5E6A3EBF391CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D56745B70C61BCE3B95EBE58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E985D08A3E1C03BD1BFE0D19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PICommander/Pods-PICommander-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA87778F3635E866966CD262 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PICommanderUITests/Pods-PICommanderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E765129D217CC82800328106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76512AD217CC82800328106 /* PICommander.xcdatamodeld in Sources */,
+				E76512A7217CC82800328106 /* ViewController.swift in Sources */,
+				E76512A5217CC82800328106 /* AppDelegate.swift in Sources */,
+				E741F3E9217CCE72000171CE /* SwiftPi.swift in Sources */,
+				E741F3E8217CCE72000171CE /* Manager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76512B4217CC82A00328106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76512BD217CC82A00328106 /* PICommanderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76512BF217CC82A00328106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76512C8217CC82A00328106 /* PICommanderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E76512BA217CC82A00328106 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76512A0217CC82800328106 /* PICommander */;
+			targetProxy = E76512B9217CC82A00328106 /* PBXContainerItemProxy */;
+		};
+		E76512C5217CC82A00328106 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76512A0217CC82800328106 /* PICommander */;
+			targetProxy = E76512C4217CC82A00328106 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E76512A8217CC82800328106 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E76512A9217CC82800328106 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E76512B0217CC82A00328106 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E76512B1217CC82A00328106 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E76512CA217CC82A00328106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E76512CB217CC82A00328106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E76512CD217CC82A00328106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69504B417AD852E094D27C10 /* Pods-PICommander.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V8LN98SE5;
+				INFOPLIST_FILE = PICommander/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.7soft.PICommander;
+				PRODUCT_MODULE_NAME = PICommander;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E76512CE217CC82A00328106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8C11CBF165FED64624E01B /* Pods-PICommander.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V8LN98SE5;
+				INFOPLIST_FILE = PICommander/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.7soft.PICommander;
+				PRODUCT_MODULE_NAME = PICommander;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E76512D0217CC82A00328106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8189524B2D23D9166E13A00A /* Pods-PICommanderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PICommanderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.7soft.PICommanderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PICommander.app/PICommander";
+			};
+			name = Debug;
+		};
+		E76512D1217CC82A00328106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 997B76D5CBE13BE83E351B74 /* Pods-PICommanderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PICommanderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.7soft.PICommanderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PICommander.app/PICommander";
+			};
+			name = Release;
+		};
+		E76512D3217CC82A00328106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F2612738B9CD2E98A25C8E /* Pods-PICommanderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PICommanderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.7soft.PICommanderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PICommander;
+			};
+			name = Debug;
+		};
+		E76512D4217CC82A00328106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7E9EC30A62698CB7B023A7 /* Pods-PICommanderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PICommanderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.7soft.PICommanderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PICommander;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E765129C217CC82800328106 /* Build configuration list for PBXProject "PICommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76512CA217CC82A00328106 /* Debug */,
+				E76512CB217CC82A00328106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76512CC217CC82A00328106 /* Build configuration list for PBXNativeTarget "PICommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76512CD217CC82A00328106 /* Debug */,
+				E76512CE217CC82A00328106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76512CF217CC82A00328106 /* Build configuration list for PBXNativeTarget "PICommanderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76512D0217CC82A00328106 /* Debug */,
+				E76512D1217CC82A00328106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76512D2217CC82A00328106 /* Build configuration list for PBXNativeTarget "PICommanderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76512D3217CC82A00328106 /* Debug */,
+				E76512D4217CC82A00328106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E76512AB217CC82800328106 /* PICommander.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E76512AC217CC82800328106 /* PICommander.xcdatamodel */,
+			);
+			currentVersion = E76512AC217CC82800328106 /* PICommander.xcdatamodel */;
+			path = PICommander.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E7651299217CC82800328106 /* Project object */;
+}
